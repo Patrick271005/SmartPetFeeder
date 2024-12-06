@@ -1,0 +1,4 @@
+For my Internet of Things project I have decided to create a Smart Pet Feeder which will automatically dispense food for your pet at certain times depending on the data gathered
+. I plan to use a ESP32 as the main brain of the project which will process all the data gathered by the sensors.
+Both ultrasonic (HC-SR04) and weight sensors (Load Cell) will be used to measure the quantity of food remaining in the bowl.
+I also plan to use these sensors to measure the quantity of food left in the container which will activate a set of 3 LED’s if the storage is nearing empty and a buzzer if it has fully run out, in conjunction with this using C/C++ code and the Wi-Fi capabilities of the ESP32 notifications will be sent to the user detailing current storage capacity. I will use an actuator (Servo Motor) as the method of dispensing food with C code deciding how much food to dispense depending on time of day and quantity of food in bowl. 
