@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>WebServer</title>
+<style>
+   
+/* frameborder="0"  between src and alt*/
+</style>
+</head>
+<body>
+    
+    
+    <h1>Smart Pet Feeder</h1>
+    
+    <p>Welcome to my website displaying my data from my project</p>
+   
+
+    <div class="row">
+        <div class="side"> 
+            
+            <button class="button3">Admin Login</button>
+            <button class="button1" button onclick="handleTurnOn()">Toggle Servo</button>
+            <script>
+                function handleTurnOn() {
+                    fetch('/turnon').then(response => response.text()).then(alert);
+                }
+            </script>
+             <img src="GreenCircle-removebg-preview.png" class="full">
+           
+             <img src="YellowCircle-removebg-preview.png"class="half">
+            <img src="RedCircle2-removebg-preview.png" class="empty">
+           
+           
+           
+        </div>
+        <div class="main">
+            <p>My video Stream</p>
+            <button class="button2">Toggle Camera</button>
+            <iframe width="460" height="460" src="http://172.20.10.11/" alt="Camera Stream currently unavailable" allowfullscreen></iframe>
+            <p>Click the button to toggle the servo state</p>
+
+            
+            <table style="width: 100%;">
+                <tr>
+                    <th>Sensor</th>
+                    <th>Value</th>
+                    <th>Unit</th>
+                </tr>
+                <tr>
+                    <td>Capacity</td>
+                    <td></td>
+                    <td>cm</td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td>  </td>
+                    <td>g</td>
+                </tr>
+            </table>
+   
+        </div>
+       
+    </div>
+
+    
+    
+    
+<!--<div class="Camera"> </div> -->
+   
+    
+<!--<div class="footer">
+    <h2>Footer</h2>
+  </div> -->
+  
+
+</body>
+</html>
